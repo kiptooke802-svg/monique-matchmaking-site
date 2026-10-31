@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MONIQUE MATCHMAKER — welcoming matchmaking connections in Kenya and around the world.">
+<meta name="theme-color" content="#5b1732">
+<title>MONIQUE MATCHMAKER | Meaningful Connections</title>
+<style>
+:root{--wine:#5b1732;--wine2:#7d2446;--gold:#d7ad5a;--cream:#fff9f1;--ink:#2d2025;--muted:#766b6d;--line:#eadfd9;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:inherit}.topbar{background:#32101f;color:#fff;text-align:center;padding:10px 16px;font-size:13px;letter-spacing:.03em}
+header{height:auto;min-height:82px;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 18px #32101f12}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.logo{width:46px;height:46px;border-radius:50%;background:var(--wine);color:var(--gold);display:grid;place-items:center;font-size:24px}.brand strong{display:block;color:var(--wine);font-size:18px;letter-spacing:.04em}.brand small{display:block;color:#998b8b;font-size:10px;letter-spacing:.25em;margin-top:3px}
+nav{display:flex;align-items:center;gap:22px}nav a{text-decoration:none;font-size:14px;font-weight:650}nav a:hover{color:var(--wine2)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:14px 22px;background:var(--gold);color:#281b1c;text-decoration:none;font-weight:800;cursor:pointer}.btn.outline{background:transparent;color:#fff;border:1px solid #ffffffb5}.btn.wine{background:var(--wine);color:#fff}
+.hero{min-height:660px;position:relative;display:flex;align-items:center;padding:80px 5%;color:#fff;background:linear-gradient(90deg,#210d19e8 0%,#351522b8 48%,#32101f30 100%),url('assets/client-family-garden.jpg') center 43%/cover no-repeat}
+.hero-inner{max-width:760px}.eyebrow{color:#f0c975;font-size:12px;letter-spacing:.22em;font-weight:850;text-transform:uppercase}.hero h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,76px);line-height:.99;margin:20px 0;max-width:700px}.hero h1 span{color:#f1ce83}.hero p{font-size:18px;line-height:1.7;max-width:650px;color:#fffF}.actions{display:flex;gap:13px;flex-wrap:wrap;margin:28px 0}.trust{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;color:#fff;margin-top:42px}.trust span:before{content:"✓";color:#f0c975;font-weight:900;margin-right:8px}
+.search-wrap{position:relative;margin:-55px auto 0;padding:0 5%;max-width:1180px;z-index:2}.search-card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 55px #32101f20;display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:16px;align-items:end}.field label{display:block;font-size:11px;letter-spacing:.12em;color:#817779;font-weight:850;margin:0 0 9px}.field input,.field select{width:100%;height:54px;border:1px solid var(--line);border-radius:11px;padding:0 14px;font:inherit;color:var(--ink);background:#fff}
+.section{padding:80px 5%}.section-head{text-align:center;max-width:720px;margin:0 auto 36px}.section-head .eyebrow{color:var(--wine2)}h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,46px);color:var(--wine);margin:12px 0}.section-head p,.intro{color:var(--muted);line-height:1.75}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1120px;margin:auto}.feature{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}.icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f8eddf;font-size:23px}.feature h3{color:var(--wine);margin:16px 0 8px}.feature p{color:var(--muted);line-height:1.7;margin:0}
+.gallery{background:#f5ece5}.photos{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1120px;margin:auto}.photo{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px #32101f10}.photo img{display:block;width:100%;height:340px;object-fit:cover}.photo div{padding:18px 20px}.photo h3{color:var(--wine);margin:0 0 6px}.photo p{color:var(--muted);margin:0;line-height:1.6;font-size:14px}
+.about-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-box{background:var(--wine);color:#fff;border-radius:22px;padding:34px}.about-box h3{font:30px Georgia,serif;color:#f1ce83;margin-top:0}.about-box p{line-height:1.8;color:#fff}
+.cta{background:linear-gradient(120deg,#4b1029,#7d2446);color:#fff;text-align:center;padding:70px 5%}.cta h2{color:#fff}.cta p{color:#f4e9ec;max-width:650px;margin:0 auto 25px;line-height:1.7}
+footer{background:#26101b;color:#f4e9ec;padding:35px 5%;text-align:center;font-size:13px;line-height:1.8}.footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin:12px 0}.footer-links a{color:#f1ce83}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:10;background:#19b765;color:#fff;text-decoration:none;padding:14px 19px;border-radius:999px;font-size:14px;font-weight:850;box-shadow:0 8px 24px #0003}
+.note{font-size:12px;color:#8b7e7f;max-width:900px;margin:24px auto 0;line-height:1.6;text-align:center}
+@media(max-width:800px){nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}nav a{font-size:12px}header{padding:13px 4%}.brand strong{font-size:15px}.hero{min-height:620px;padding:65px 6%;background-position:55% center}.search-card{grid-template-columns:1fr 1fr}.search-card .btn{grid-column:1/-1}.features{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.section{padding:60px 5%}}
+@media(max-width:520px){nav a:nth-child(2),nav a:nth-child(3){display:none}.hero h1{font-size:47px}.hero p{font-size:16px}.search-card{grid-template-columns:1fr;padding:22px}.search-card .btn{grid-column:auto}.photos{grid-template-columns:1fr}.photo img{height:270px}.trust{gap:12px}.whatsapp{right:12px;bottom:12px;padding:12px 15px}}
+</style>
+</head>
+<body>
+<div class="topbar">💛 WELCOME TO MONIQUE MATCHMAKER &nbsp; · &nbsp; Meaningful connections across the world</div>
+<header>
+  <a class="brand" href="#home"><span class="logo">♥</span><span><strong>MONIQUE MATCHMAKER</strong><small>WORLDWIDE MATCHMAKING</small></span></a>
+  <nav aria-label="Main navigation"><a href="#about">About Us</a><a href="#services">Services</a><a href="#stories">Our Gallery</a><a href="#contact" class="btn wine">Contact Us</a></nav>
+</header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+  <div class="eyebrow">Love knows no borders</div>
+  <h1>Find Love.<br><span>Discover Your Forever.</span></h1>
+  <p>Meaningful introductions begin with understanding. Explore matchmaking possibilities in Kenya and around the world, with personal guidance every step of the way.</p>
+  <div class="actions"><a class="btn" href="#search">Find Your Match ↗</a><a class="btn outline" href="#about">Discover Monique</a></div>
+  <div class="trust"><span>Personal attention</span><span>Worldwide connections</span><span>Respect and privacy</span></div>
+</div></section>
+<div class="search-wrap" id="search"><form class="search-card" id="matchForm">
+  <div class="field"><label for="country">WHERE WOULD YOU LIKE TO MEET SOMEONE?</label><select id="country"><option value="Any country">Any country</option><option>Kenya</option><option>United Kingdom</option><option>United States</option><option>Canada</option><option>South Africa</option><option>Australia</option><option>Other</option></select></div>
+  <div class="field"><label for="age">PREFERRED AGE RANGE</label><select id="age"><option>18–25</option><option selected>26–35</option><option>36–45</option><option>46–55</option><option>56 and above</option><option>Open to all ages (18+)</option></select></div>
+  <div class="field"><label for="goal">RELATIONSHIP GOAL</label><select id="goal"><option>Marriage</option><option>Long-term relationship</option><option>Friendship first</option><option>Open to possibilities</option></select></div>
+  <button class="btn wine" type="submit">Send my enquiry →</button>
+</form></div>
+<section class="section" id="services"><div class="section-head"><div class="eyebrow">A thoughtful approach</div><h2>Make room for a meaningful connection</h2><p>We believe matchmaking should feel personal, respectful and welcoming. Tell us what matters to you and let us help you explore the next step.</p></div>
+<div class="features">
+ <article class="feature"><div class="icon">🌍</div><h3>Worldwide Matchmaking</h3><p>Explore introductions and matchmaking enquiries across Kenya and other countries.</p></article>
+ <article class="feature"><div class="icon">💌</div><h3>Personal Introductions</h3><p>Share your preferences and relationship goals so our team can understand the kind of connection you seek.</p></article>
+ <article class="feature"><div class="icon">🤝</div><h3>Guidance with Care</h3><p>We encourage respectful communication, honest expectations and safe choices when meeting new people.</p></article>
+</div></section>
+<section class="section gallery" id="stories"><div class="section-head"><div class="eyebrow">Shared with permission</div><h2>Moments that celebrate connection</h2><p>Photographs shared with the agency's permission. They are displayed as gallery images and do not represent available member profiles.</p></div>
+<div class="photos">
+ <article class="photo"><img src="assets/client-family-garden.jpg" alt="Family sitting together outdoors on a red sofa"><div><h3>Family moments</h3><p>Celebrating the people and relationships that make life meaningful.</p></div></article>
+ <article class="photo"><img src="assets/client-family-motorcycles.jpg" alt="Family and friends together with motorcycles"><div><h3>Life together</h3><p>Every story is unique. We value respect, trust and genuine connection.</p></div></article>
+</div><p class="note">Please ensure you have permission to publish these photographs on a public website and that everyone pictured, or their legal guardian where applicable, has agreed to public display.</p></section>
+<section class="section" id="about"><div class="about-grid"><div><div class="eyebrow">About Monique Matchmaker</div><h2>Helping people take the first step towards connection.</h2><p class="intro">MONIQUE MATCHMAKER is a matchmaking service focused on helping adults explore meaningful relationships. We welcome enquiries from people in Kenya and internationally. Tell us about your preferences and our team can guide you on the next steps.</p><a class="btn wine" href="#contact">Talk to our team</a></div><div class="about-box"><h3>Respect. Trust. Possibility.</h3><p>Good connections begin with honest conversations. We encourage all visitors to protect their personal information, verify who they communicate with and arrange first meetings in safe, public places.</p><p>Our service is for adults aged 18 and over.</p></div></div></section>
+<section class="cta" id="contact"><div class="eyebrow">Your next chapter starts with a conversation</div><h2>Ready to explore a meaningful match?</h2><p>Contact MONIQUE MATCHMAKER and tell us what kind of relationship you hope to find. We look forward to hearing from you.</p><a class="btn" id="contactButton" href="#search">Send an enquiry</a></section>
+</main>
+<footer>© 2026 MONIQUE MATCHMAKER · Worldwide Matchmaking
+<div class="footer-links"><a href="#about">About Us</a><a href="#services">Services</a><a href="#contact">Contact</a><a href="privacy.html">Privacy Policy</a></div>
+Please use the service respectfully. We do not publish private member information on this static website.
+</footer>
+<a class="whatsapp" id="waFloat" href="#contact" aria-label="Contact Monique Matchmaker on WhatsApp">☏ Chat on WhatsApp</a>
+<script>
+/* IMPORTANT: The business WhatsApp number is set in international format,
+   digits only, e.g. 254712345678. Do not include +, spaces or dashes. */
+const WHATSAPP_NUMBER = "18768030819";
+function whatsappLink(message){
+  if(WHATSAPP_NUMBER.includes("X")) return "#contact";
+  return "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message);
+}
+const introMessage="Hello MONIQUE MATCHMAKER. I would like to make a matchmaking enquiry.";
+document.getElementById("waFloat").href=whatsappLink(introMessage);
+document.getElementById("contactButton").href=whatsappLink(introMessage);
+document.getElementById("matchForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const message="Hello MONIQUE MATCHMAKER. I am interested in matchmaking. Preferred country: "+document.getElementById("country").value+". Preferred age range: "+document.getElementById("age").value+". Relationship goal: "+document.getElementById("goal").value+". Please contact me with the next steps.";
+ const link=whatsappLink(message);
+ if(link==="#contact"){alert("The WhatsApp business number has not been added yet. Please contact the website owner to configure it.");return;}
+ window.open(link,"_blank","noopener");
+});
+</script>
+</body></html>
